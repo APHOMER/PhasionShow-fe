@@ -1,25 +1,77 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import ShowList from './components/Shows/ShowList';
+import CreateShow from './components/Shows/CreateShow';
+import UserProfile from './components/Profile/UserProfile';
+
+const App = () => {
+  const [authToken, setAuthToken] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/login" element={<Login setAuthToken={setAuthToken} />} />
+          <Route path="/register" element={<Register setAuthToken={setAuthToken} />} />
+          <Route path="/shows/create" element={<CreateShow token={authToken} />} />
+          <Route path="/shows" element={<ShowList />} />
+          <Route path="/profile" element={<UserProfile token={authToken} />} />
+          <Route path="/" element={<h1>Welcome to the Fashion Show Management System</h1>} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
+
+
+// // src/App.js
+
+// import React, { useState } from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Login from './components/Auth/Login';
+// import Register from './components/Auth/Register';
+// import ShowList from './components/Shows/ShowList';
+// // import ShowList from './components/Shows/Showlist';
+// import CreateShow from './components/Shows/CreateShow';
+// import UserProfile from './components/Profile/UserProfile';
+
+// const App = () => {
+//   const [authToken, setAuthToken] = useState(null);
+
+//   return (
+//     <Router>
+//       <div>
+//         <Routes>
+//           <Route path="/login">
+//             <Login setAuthToken={setAuthToken} />
+//           </Route>
+//           <Route path="/register">
+//             <Register setAuthToken={setAuthToken} />
+//           </Route>
+//           <Route path="/shows/create">
+//             <CreateShow token={authToken} />
+//           </Route>
+//           <Route path="/shows">
+//             <ShowList />
+//           </Route>
+//           <Route path="/profile">
+//             <UserProfile token={authToken} />
+//           </Route>
+//           <Route path="/">
+//             <h1>Welcome to the Fashion Show Management System</h1>
+//           </Route>
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// };
+
+// export default App;
+
+
+// src/App.js

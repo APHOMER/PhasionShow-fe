@@ -6,6 +6,7 @@ import Register from './components/Auth/Register';
 import ShowList from './components/Shows/ShowList';
 import CreateShow from './components/Shows/CreateShow';
 import UserProfile from './components/Profile/UserProfile';
+import Landing from './components/main';
 
 const App = () => {
   const [authToken, setAuthToken] = useState(null);
@@ -19,7 +20,7 @@ const App = () => {
           <Route path="/shows/create" element={<CreateShow token={authToken} />} />
           <Route path="/shows" element={<ShowList />} />
           <Route path="/profile" element={<UserProfile token={authToken} />} />
-          <Route path="/" element={<h1>Welcome to the Fashion Show Management System</h1>} />
+          <Route path="/" element={<Landing/>} />
         </Routes>
       </div>
     </Router>

@@ -18,7 +18,34 @@ export default function Landing () {
             </div>
         </div>
         <div className='middle-section'></div>
-        <div className='bottom-section'></div>
+        <div className='bottom-section'>
+            <div>
+                <img alt=''></img>
+                <p>Events is a global self service ticketing platform for live experience that allows anyone to create share, find and attend events that fuels their passions and enrich their lives </p>   
+            </div>
+            <div>
+                <h1>Plan Events</h1>
+                <p>Create and Set Up</p>
+                <p>Sell Tickets</p>
+                <p>Online RSVP </p>
+                <p>Online Events</p>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <p>Press</p>
+                <p>Contact Us</p>
+                <p>Help Center </p>
+                <p>How it works</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+            <div>
+                <h1>Stay in the Loop</h1>
+                <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                <input placeholder='Enter Your Email Address'/>
+                <button>Subscribe Now</button>
+            </div>
+        </div>
       </div>
     )
 }

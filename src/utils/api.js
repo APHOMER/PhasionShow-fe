@@ -13,3 +13,4 @@ export const getShows = () => axios.get(`${API_URL}/shows`);
 export const getUserProfile = (token) => axios.get(`${API_URL}/users`, {
   headers: { Authorization: `Bearer ${token}` }
 });
+ 

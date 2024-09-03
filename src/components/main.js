@@ -17,7 +17,23 @@ export default function Landing () {
                 </div>
             </div>
         </div>
-        <div className='middle-section'></div>
+        <div className='middle-section'>
+            <h2>Upcoming Events</h2>
+            <select>
+                <option>Weekdays</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wedesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+            </select>
+            <select>
+                <option>Event Types</option>
+            </select>
+            <select>
+                <option>Any Category</option>
+            </select>
+        </div>
         <div className='bottom-section'>
             <div>
                 <img alt=''></img>

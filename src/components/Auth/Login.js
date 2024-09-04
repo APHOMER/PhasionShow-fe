@@ -35,7 +35,7 @@ const Login = ({ setAuthToken }) => {
   return (
     <>
       <div className="page-wrapper">
-        <div>
+        <div className="page-content">
           <header>
             <h1>Events</h1>
           </header>

@@ -1,5 +1,14 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 main {
     font-size: 1rem;
+}
+
+h1 {
+   font-family: "Faster One", system-ui;
+   margin-bottom: 4rem;
 }
 
 a {
@@ -7,19 +16,22 @@ a {
 }
 
 .page-wrapper {
+    align-items: center;
+    column-gap: calc(2rem + 5vw);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 0 auto;
-    width: 90%;
+    row-gap: 2rem;
+    margin: 2em 5%;
 }
 
 .banner-image {
-    max-width: 815px;
+    border-radius: 1rem;
+    object-fit: cover;
+    max-width: 500px;
 }
 
 .form-header {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -92,7 +104,7 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     width: 100%;
 }
@@ -122,9 +134,23 @@ a {
     color: hsl(227, 82%, 51%);
 }
 
+.page-wrapper > * {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .page-wrapper {
+        align-items: stretch;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
+    }
+
+    .page-content,
+    .banner-image {
+        flex: 1 1 0px;
+    }
+
+    .page-content {
+        max-width: 500px;
     }
 }

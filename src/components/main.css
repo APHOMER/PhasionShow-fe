@@ -1,5 +1,15 @@
+.page-container {
+    margin: 0;
+    padding: 0;
+}
 .top-section {
     background-image: url("./da2ee03127e2b8b2d50ab9ea240391e9.png");
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: 0;
 }
 
 img {
@@ -7,6 +17,6 @@ img {
     width: 121px;
     height: 30px;
 }
-.left-hand-side {
-    background-color: black;
-}
+/* .left-hand-side {
+    
+} */

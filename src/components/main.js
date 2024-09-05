@@ -18,21 +18,43 @@ export default function Landing () {
             </div>
         </div>
         <div className='middle-section'>
-            <h2>Upcoming Events</h2>
-            <select>
-                <option>Weekdays</option>
-                <option>Monday</option>
-                <option>Tuesday</option>
-                <option>Wedesday</option>
-                <option>Thursday</option>
-                <option>Friday</option>
-            </select>
-            <select>
-                <option>Event Types</option>
-            </select>
-            <select>
-                <option>Any Category</option>
-            </select>
+            <div className='upcoming-events'>
+                <div className='options-conatiner'>
+                    <h2>Upcoming Events</h2>
+                    <select>
+                        <option>Weekdays</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wedesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                    </select>
+                    <select>
+                        <option>Event Types</option>
+                    </select>
+                    <select>
+                        <option>Any Category</option>
+                    </select>
+                </div>
+                <div className='events-container'>
+                    <div className='event-1'>
+                        <div className='thumbnail-container'>
+                            <img src="./events.png" className="event-img" alt="" />
+                        </div>
+                        <div className='event-info-containeri'>
+                            <div className='event-calendar'></div>
+                            <div className='event-info'>
+                                <p>Lagos Fashion Week</p>
+                                <p>We'll get you directly seated and inside for you to enjoy the show</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='load-btn'>
+                    <button>Load More</button>
+                </div>
+            </div>
+            <div className></div>     
         </div>
         <div className='bottom-section'>
             <div>

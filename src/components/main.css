@@ -17,10 +17,17 @@
     width: 100%;
     display: flex;
     padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
 }
 
 .right-hand-side {
  display: flex;
+ width: 419px;
+ height: 41px;
+ justify-content: space-between;
+ margin-right: 100px;
 }
 
 img {
@@ -28,6 +35,15 @@ img {
     width: 121px;
     height: 20px;
 }
-/* .left-hand-side {
-    
-} */
+.left-hand-side {
+    margin-left: 100px;
+}
+
+.login-btn {
+    width: 101px;
+    height: 41px;
+    background: none;
+    border-radius: 50px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}

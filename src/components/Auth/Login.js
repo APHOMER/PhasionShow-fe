@@ -89,7 +89,7 @@ const Login = ({ setAuthToken }) => {
                 <button className="external-login-btn">
                   <figure>
                     <img
-                      src="/assets/images/google.png"
+                      src="/assets/images/google1.png"
                       alt="Google icon"
                     />
                     <figcaption>Sign in with Google</figcaption>

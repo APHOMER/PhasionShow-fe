@@ -22,6 +22,21 @@ export default function Landing () {
                 <button>Get Ticket</button>
                 <button>Learn More</button>
             </div>
+            <div className='search-evts'>
+                <p>Search Events</p>
+                <input placeholder='Konser Jazz'/>
+                <p>Place</p>
+                <input placeholder='Konser Jazz'/>
+                <p>Time</p>
+                <select>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+
+            </div>
         </div>
         <div className='middle-section'>
             <div className='upcoming-events'>

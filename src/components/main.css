@@ -3,6 +3,7 @@
     padding: 0;
 }
 .top-section {
+    position: relative;
     background-image: url("./da2ee03127e2b8b2d50ab9ea240391e9.png");
     width: 100%;
     height: 720px;
@@ -15,6 +16,7 @@
 }
 
 .header {
+    
     width: 100%;
     display: flex;
     padding-top: 20px;
@@ -50,15 +52,46 @@ img {
     color: #FFFFFF;
 }
 
+.slide-show {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.get-ticket-btn {
+    width: 182px;
+    height: 60px;
+    background-color:  #242565;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+}
+
+.learn-btn {
+    width: 182px;
+    height: 60px;
+    background: none;
+    color: #FFFFFF;
+    border-color: #0A075F;
+    border-radius: 50px;
+}
+
 .search-evts {
     background-color:  #242565;
     ;
-    display: flex;
+    display: grid;
     width: 1081px;
     height: 140px;
     border-radius: 10px;
     position: absolute;
-    bottom: 1;
+    left: 130px;
+    bottom: -70px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search {
+
 }
 
 /* bottom-section */

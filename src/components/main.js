@@ -16,11 +16,19 @@ export default function Landing () {
                     <button className='login-btn'>Login</button>
                 </div>
             </div>
-            <div className='slide-show'> 
-                <p>SBS MTV The Kpop Show Ticket  Package</p>
-                <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
-                <button className='get-ticket-btn'>Get Ticket</button>
-                <button className='learn-btn'>Learn More</button>
+            <div className='slide-show-ctn'>
+                <div className='slide-show'>
+                    <div>
+                        <p>SBS MTV The Kpop Show Ticket  Package</p>
+                        <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
+                    </div>
+                    <button className='get-ticket-btn'>Get Ticket</button>
+                    <button className='learn-btn'>Learn More</button> 
+                </div> 
+                
+                <div className='btn-ctn'>
+                   
+                </div>
             </div>
             <div className='search-evts'>
                 <div>

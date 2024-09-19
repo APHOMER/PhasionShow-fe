@@ -49,14 +49,20 @@ img {
     background: none;
     border-radius: 50px;
     border-color: #FFFFFF;
+    border: solid;
     color: #FFFFFF;
+    border-width: 2px;
+}
+
+.slide-show-ctn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 300px;
 }
 
 .slide-show {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 300px;
+    width: 460px;
 }
 
 .get-ticket-btn {
@@ -72,9 +78,11 @@ img {
     width: 182px;
     height: 60px;
     background: none;
-    color: #FFFFFF;
-    border-color: #0A075F;
+    color: #FFFFFF;  
+    border: solid;
     border-radius: 50px;
+    border-width: 2px;
+    border-color: #0A075F;
 }
 
 .search-evts {
@@ -83,7 +91,7 @@ img {
     display: grid;
     width: 1081px;
     height: 140px;
-    border-radius: 10px;
+    border-radius: 20px;
     position: absolute;
     left: 130px;
     bottom: -70px;

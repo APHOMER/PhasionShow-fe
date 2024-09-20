@@ -31,22 +31,22 @@ export default function Landing () {
                 </div>
             </div>
             <div className='search-evts'>
-                <div>
+                <div className='search-ctn'>
                     <p>Search Events</p>
                     <input placeholder='Konser Jazz' className='search'/>
                 </div>
-                 <div>
+                 <div className='place-ctn'>
                     <p>Place</p>
                     <input placeholder='Konser Jazz' className='place'/>
                  </div>
-                 <div>
+                 <div className='time-ctn'>
                     <p>Time</p>
-                    <select>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                    <select className='time'>
+                        <option>Any Date</option>
+                        <option>01-03-2024</option>
+                        <option>02-03-2024</option>
+                        <option>01-04-2024</option>
+                        <option>05-04-2024</option>
                     </select>
                  </div>          
             </div>

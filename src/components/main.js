@@ -16,26 +16,39 @@ export default function Landing () {
                     <button className='login-btn'>Login</button>
                 </div>
             </div>
-            <div>
-                <p>SBS MTV The Kpop Show Ticket  Package</p>
-                <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
-                <button>Get Ticket</button>
-                <button>Learn More</button>
+            <div className='slide-show-ctn'>
+                <div className='slide-show'>
+                    <div>
+                        <p>SBS MTV The Kpop Show Ticket  Package</p>
+                        <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
+                    </div>
+                    <button className='get-ticket-btn'>Get Ticket</button>
+                    <button className='learn-btn'>Learn More</button> 
+                </div> 
+                
+                <div className='btn-ctn'>
+                   
+                </div>
             </div>
             <div className='search-evts'>
-                <p>Search Events</p>
-                <input placeholder='Konser Jazz'/>
-                <p>Place</p>
-                <input placeholder='Konser Jazz'/>
-                <p>Time</p>
-                <select>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                </select>
-
+                <div className='search-ctn'>
+                    <p>Search Events</p>
+                    <input placeholder='Konser Jazz' className='search'/>
+                </div>
+                 <div className='place-ctn'>
+                    <p>Place</p>
+                    <input placeholder='Konser Jazz' className='place'/>
+                 </div>
+                 <div className='time-ctn'>
+                    <p>Time</p>
+                    <select className='time'>
+                        <option>Any Date</option>
+                        <option>01-03-2024</option>
+                        <option>02-03-2024</option>
+                        <option>01-04-2024</option>
+                        <option>05-04-2024</option>
+                    </select>
+                 </div>          
             </div>
         </div>
         <div className='middle-section'>

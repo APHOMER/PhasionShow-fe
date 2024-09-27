@@ -13,7 +13,7 @@ export default function Landing () {
                     <p>Schedule</p>
                     <p>Ticket</p>
                     <p>Contact</p>
-                    <button className='login-btn'>Login</button>
+                    <button className='login-btn'><a href='/login'>Login</a></button>
                 </div>
             </div>
             <div className='slide-show-ctn'>

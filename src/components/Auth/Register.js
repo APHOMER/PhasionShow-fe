@@ -2,13 +2,35 @@
 
 import React, { useState } from 'react';
 import { register } from '../../utils/api';
+import { Link } from 'react-router-dom';
+
+import "../../styles/register.css";
 
 const Register = ({ setAuthToken }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+
+  const [formInputs, setFormInputs] = useState({
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "dateOfBirth": "",
+    "password": "",
+    "confirmPassword": ""
+  });
+
+  const [shouldRememberMe, setShouldRememberMe] = useState(false);
+  const [agreeToTerms, setAgreeToTerms] = useState(false);
+
+  const handleInputChange = (event) => {
+    setFormInputs(prevState => ({
+      ...prevState,
+      [event.target.name]: event.target.value
+    }));
+  }
 
   const handleSubmit = async (e) => {
+
+    const { name, email, password } = formInputs;
+
     e.preventDefault();
     try {
       const { data } = await register({ name, email, password });
@@ -20,24 +42,9 @@ const Register = ({ setAuthToken }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <div>
-          <p>First Name</p>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
-        </div>
-        <div>
-          <p>Last Name</p>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
-        </div> 
-      </div>
-      <div>
-         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-         <input type='date'/>
-      </div>
-     <div>
-         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-     </div>
-     
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
+      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
       <button type="submit">Register</button>
     </form>
   );

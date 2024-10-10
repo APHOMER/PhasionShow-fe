@@ -1,6 +1,7 @@
 import './main.css'
 // import Events from 'events.png'
 
+
 export default function Landing () {
     return (
       <div className='page-container'>
@@ -13,7 +14,7 @@ export default function Landing () {
                     <p>Schedule</p>
                     <p>Ticket</p>
                     <p>Contact</p>
-                    <button className='login-btn'><a href='/login'>Login</a></button>
+                    <button className='login-btn'>Login</button>
                 </div>
             </div>
             <div className='slide-show-ctn'>
@@ -88,6 +89,9 @@ export default function Landing () {
                     <button>Load More</button>
                 </div>
             </div>
+            <div className='sponsors'>
+                <img src='./asset/image/image_4.png' alt=''/>
+            </div>  
             <div className></div>     
         </div>
         <div className='bottom-section'>

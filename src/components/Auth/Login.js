@@ -1,7 +1,7 @@
 // src/components/Auth/Login.js
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { login } from '../../utils/api';
 
@@ -15,12 +15,12 @@ const Login = ({ setAuthToken }) => {
     "password": ""
   });
 
-  const handleInputChange = (event) => {
-    setFormInputs(prevState => ({
-      ...prevState,
-      [event.target.name]: event.target.value
-    }))
-  };
+  // const handleInputChange = (event) => {
+  //   setFormInputs(prevState => ({
+  //     ...prevState,
+  //     [event.target.name]: event.target.value
+  //   }))
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,8 +34,8 @@ const Login = ({ setAuthToken }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+      {/* <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required /> */}
       <button type="submit">Login</button>
     </form>
   );

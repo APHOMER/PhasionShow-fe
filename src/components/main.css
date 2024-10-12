@@ -156,7 +156,7 @@
 
 .sponsors {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     justify-content: center;
     align-items: center;
 }

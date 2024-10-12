@@ -90,7 +90,15 @@ export default function Landing () {
                 </div>
             </div>
             <div className='sponsors'>
-                <img src='./asset/image/image_4.png' alt=''/>
+                <img src='./image_4.png' alt=''/>
+                <img src='./image 5.png' className='google-logo' alt=''/>
+                <img src='./image 14.png' className="stripe-logo" alt=''/>
+                <img src='./image 15.png'  className="youtube-logo" alt=''/>
+                <img src='./image 16.png'  className="microsoft-logo" alt=''/>
+                <img src='./image 17.png' className="medium-logo" alt=''/>
+                <img src='./image 18.png' className="zoom-logo" alt=''/>
+                <img src='./image 19.png' className="uber-logo" alt=''/>
+                <img src='./image 20.png' className="grab-logo" alt=''/>
             </div>  
             <div className></div>     
         </div>

@@ -154,6 +154,13 @@
     margin-top: 100px;
 }
 
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
 /* bottom-section */
 
 .bottom-section {

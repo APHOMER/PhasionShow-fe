@@ -1,4 +1,5 @@
 import './main.css'
+import { Link } from 'react-router-dom'
 // import Events from 'events.png'
 
 export default function Landing () {
@@ -13,7 +14,7 @@ export default function Landing () {
                     <p>Schedule</p>
                     <p>Ticket</p>
                     <p>Contact</p>
-                    <button className='login-btn'>Login</button>
+                    <Link to="/login" className='login-btn'>Login</Link>
                 </div>
             </div>
             <div className='slide-show-ctn'>

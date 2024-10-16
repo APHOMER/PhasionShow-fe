@@ -44,6 +44,9 @@ img {
 }
 
 .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 101px;
     height: 41px;
     background: none;

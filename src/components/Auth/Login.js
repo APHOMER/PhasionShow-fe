@@ -1,7 +1,7 @@
 // src/components/Auth/Login.js
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { login } from '../../utils/api';
 
@@ -9,6 +9,7 @@ import "../../styles/login.css";
 
 
 const Login = ({ setAuthToken }) => {
+  const navigate = useNavigate()
 
   const [formInputs, setFormInputs] = useState({
     "email": "",
@@ -25,8 +26,12 @@ const Login = ({ setAuthToken }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await login({ email: formInputs.email, password: formInputs.password });
-      setAuthToken(data.token);
+      const data = {email:formInputs.email, password:formInputs.password}
+      let retro = (await login(data)).data
+      console.log({HEREEEE: retro})
+      setAuthToken(retro.token);
+      sessionStorage.setItem("token", retro.token)
+      navigate("/")
     } catch (err) {
       console.error(err);
     }

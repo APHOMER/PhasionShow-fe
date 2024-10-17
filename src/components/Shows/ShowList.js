@@ -3,14 +3,17 @@
 import React, { useEffect, useState } from 'react';
 import { getShows } from '../../utils/api';
 
-const ShowList = () => {
+const ShowList = ({token}) => {
   const [shows, setShows] = useState([]);
 
   useEffect(() => {
     const fetchShows = async () => {
       try {
-        const { data } = await getShows();
+        const tokens = sessionStorage.getItem("token") ?? ""
+        console.log(tokens)
+        const { data } = await getShows(tokens);
         setShows(data);
+        console.log(data)
       } catch (err) {
         console.error(err);
       }

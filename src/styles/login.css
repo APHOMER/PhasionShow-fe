@@ -16,27 +16,32 @@ a {
 }
 
 .page-wrapper {
-    align-items: center;
-    column-gap: calc(2rem + 5vw);
+    justify-content: space-between;
+    column-gap: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 2rem;
-    margin: 2em 5%;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.page-content, .banner-image{
+    flex: 1;
+}
+
+.page-content{
+    padding: 20px;
 }
 
 .banner-image {
     border-radius: 1rem;
     object-fit: cover;
-    max-width: 500px;
+    height: auto;
 }
 
 .form-header {
     font-size: 1.5rem;
     font-weight: 700;
-}
-
-.form-wrapper {
-    max-width: 456px;
 }
 
 .form {
@@ -73,6 +78,7 @@ a {
     cursor: pointer;
     font-size: 1.25rem;
     padding: 1rem;
+    margin: 10px auto;
     width: 100%;
 }
 
@@ -103,6 +109,7 @@ a {
     border-radius: 0.75rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1.5rem;
     padding: 0.5rem;
     text-align: center;
@@ -114,13 +121,19 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1.25rem;
+    width: auto;
 }
 
 .external-login-btn figcaption {
     color: hsl(228, 28%, 27%);
     font-size: 1rem;
     white-space: nowrap;
+}
+
+.external-login-btn img{
+    width: auto;
 }
 
 .bottom-text {
@@ -134,20 +147,16 @@ a {
     color: hsl(227, 82%, 51%);
 }
 
-.page-wrapper > * {
-    width: 100%;
-}
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .page-wrapper {
         align-items: stretch;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
+        margin: 2em auto;
     }
 
-    .page-content,
-    .banner-image {
-        flex: 1 1 0px;
+    .banner-image{
+        display: none;
     }
 
     .page-content {

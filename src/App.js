@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/login" element={<Login setAuthToken={setAuthToken} />} />
           <Route path="/register" element={<Register setAuthToken={setAuthToken} />} />
           <Route path="/shows/create" element={<CreateShow token={authToken} />} />
-          <Route path="/shows" element={<ShowList />} />
+          <Route path="/shows" element={<ShowList token={authToken} />} />
           <Route path="/profile" element={<UserProfile token={authToken} />} />
           <Route path="/" element={<Landing/>} />
         </Routes>

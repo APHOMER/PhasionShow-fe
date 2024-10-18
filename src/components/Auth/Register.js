@@ -42,7 +42,7 @@ const Register = ({ setAuthToken }) => {
     try {
       const { data } = await register(body);
       setAuthToken(data.token);
-      navigate("/")
+      navigate("/user/signup")
     } catch (err) {
       console.error(err);
     }
@@ -134,7 +134,7 @@ const Register = ({ setAuthToken }) => {
                 </div>
 
                 <Link
-                  to="/"
+                  to="/user/forgotpassword"
                   className="forgot-password-link"
                 >Forgot password?</Link>
 
@@ -184,7 +184,7 @@ const Register = ({ setAuthToken }) => {
             </div>
           </main>
 
-          <p className="login-text">Don&apos;t have an account? <Link to="/login">Log in</Link></p>
+          <p className="login-text">Don&apos;t have an account? <Link to="/user/login">Log in</Link></p>
         </section>
         <img
           src="/assets/images/banner-image.jpg"

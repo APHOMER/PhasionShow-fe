@@ -2,6 +2,7 @@ import './main.css'
 import { Link } from 'react-router-dom'
 // import Events from 'events.png'
 
+
 export default function Landing () {
     return (
       <div className='page-container'>
@@ -89,7 +90,33 @@ export default function Landing () {
                     <button>Load More</button>
                 </div>
             </div>
-            <div className></div>     
+            <div className='sponsors-ctn'>
+                <div>
+                    <h2>Join These Brands</h2>
+                    <p>We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+                </div>
+                <div className='sponsors'>
+                    <div className="logo-ctn">
+                       <img src='./image_4.png' className='spotify-logo' alt=''/>
+                    </div >
+                    <div className="logo-ctn">
+                        <img src='./image 5.png' className='google-logo' alt=''/>
+                    </div>
+                    <div className="logo-ctn">
+                        <img src='./image 14.png' className="stripe-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn"><img src='./image 15.png'  className="youtube-logo" alt=''/></div>
+                    <div className="logo-ctn"> <img src='./image 16.png'  className="microsoft-logo" alt=''/></div>
+                    <div className="logo-ctn"> <img src='./image 17.png' className="medium-logo" alt=''/></div>
+                    <div className="logo-ctn"><img src='./image 18.png' className="zoom-logo" alt=''/></div>
+                    <div className="logo-ctn"><img src='./image 19.png' className="uber-logo" alt=''/></div>
+                    <div className="logo-ctn">  <img src='./image 20.png' className="grab-logo" alt=''/></div>           
+                </div>
+               
+            </div>  
+            <div className="blog">
+                <div></div>
+            </div>     
         </div>
         <div className='bottom-section'>
             <div>

@@ -53,7 +53,7 @@ const Register = ({ setAuthToken }) => {
       <div className="page-wrapper">
         <section className="page-content">
           <header>
-            <h1>Events</h1>
+            <h1>PhasionShow</h1>
           </header>
           <main>
             <div className='form-wrapper'>

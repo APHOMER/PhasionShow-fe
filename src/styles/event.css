@@ -1,0 +1,42 @@
+.main{
+  margin: 20px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgb(202, 202, 202);
+}
+
+.main img{
+  width: 100%;
+  aspect-ratio: 1.75;
+}
+
+.details{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.date p, h3{
+  margin: 0;
+}
+
+.month{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 11px;
+  color: #3D37F1;
+}
+
+.day{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.description{
+  color: #6A6A6A;
+  margin: 5px 0;
+}

@@ -42,7 +42,7 @@ const Login = ({ setAuthToken }) => {
       <div className="page-wrapper">
         <div className="page-content">
           <header>
-            <h1>Events</h1>
+            <h1>PhasionShow</h1>
           </header>
           <main>
 

@@ -1,6 +1,52 @@
 import './main.css'
 import { Link } from 'react-router-dom'
+import Event from './UI/event'
 // import Events from 'events.png'
+
+const events = [
+    {
+        name: "Lagos Fashion Week",
+        description: "We’ll get you directly seated and inside for you to enjoy the show.",
+        day: 14,
+        month: "APR",
+        src: "/event1.png"
+    },
+    {
+        name: "GT CO Premium International Fashion Trade Show",
+        description: "Directly seated and inside for you to enjoy the show.",
+        day: 20,
+        month: "AUG",
+        src: "/event2.png"
+    },
+    {
+        name: "Abuja Secret Fashion Show Wuje",
+        description: "Directly seated and inside for you to enjoy the show.",
+        day: 18,
+        month: "SEP",
+        src: "/event3.png"
+    },
+    {
+        name: "Africa Fashion Week Nigeria 2024",
+        description: "Directly seated and inside for you to enjoy the show.",
+        day: 18,
+        month: "SEP",
+        src: "/event4.png"
+    },
+    {
+        name: "Lagos Fashion Council Fund Show",
+        description: "We’ll get you directly seated and inside for you to enjoy the show.",
+        day: 14,
+        month: "APR",
+        src: "/event5.png"
+    },
+    {
+        name: "Akwa ibom Fashion Concert Calabar",
+        description: "Directly seated and inside for you to enjoy the show.",
+        day: 20,
+        month: "AUG",
+        src: "/event6.png"
+    }
+]
 
 
 export default function Landing () {
@@ -9,7 +55,7 @@ export default function Landing () {
           <div className='top-section'>
             <div className='header'>
                 <div className='left-hand-side'>
-                <img src="./events.png" className="suc-img" alt="" />
+                    <img src="./events.png" className="suc-img" alt="" />
                 </div>
                 <div className='right-hand-side'>
                     <p>Schedule</p>
@@ -33,15 +79,15 @@ export default function Landing () {
                 </div>
             </div>
             <div className='search-evts'>
-                <div className='search-ctn'>
+                <div className='search-ctn search-param'>
                     <p>Search Events</p>
                     <input placeholder='Konser Jazz' className='search'/>
                 </div>
-                 <div className='place-ctn'>
+                 <div className='place-ctn search-param'>
                     <p>Place</p>
                     <input placeholder='Konser Jazz' className='place'/>
                  </div>
-                 <div className='time-ctn'>
+                 <div className='time-ctn search-param'>
                     <p>Time</p>
                     <select className='time'>
                         <option>Any Date</option>
@@ -55,39 +101,40 @@ export default function Landing () {
         </div>
         <div className='middle-section'>
             <div className='upcoming-events'>
-                <div className='options-conatiner'>
+                <div className='options-container'>
                     <h2>Upcoming Events</h2>
-                    <select>
-                        <option>Weekdays</option>
-                        <option>Monday</option>
-                        <option>Tuesday</option>
-                        <option>Wedesday</option>
-                        <option>Thursday</option>
-                        <option>Friday</option>
-                    </select>
-                    <select>
-                        <option>Event Types</option>
-                    </select>
-                    <select>
-                        <option>Any Category</option>
-                    </select>
-                </div>
-                <div className='events-container'>
-                    <div className='event-1'>
-                        <div className='thumbnail-container'>
-                            <img src="./events.png" className="event-img" alt="" />
-                        </div>
-                        <div className='event-info-containeri'>
-                            <div className='event-calendar'></div>
-                            <div className='event-info'>
-                                <p>Lagos Fashion Week</p>
-                                <p>We'll get you directly seated and inside for you to enjoy the show</p>
-                            </div>
-                        </div>
+
+                    <div className='filters'>
+                        <select>
+                            <option>Weekdays</option>
+                            <option>Monday</option>
+                            <option>Tuesday</option>
+                            <option>Wedesday</option>
+                            <option>Thursday</option>
+                            <option>Friday</option>
+                        </select>
+                        <select>
+                            <option>Event Types</option>
+                        </select>
+                        <select>
+                            <option>Any Category</option>
+                        </select>
                     </div>
                 </div>
+                <div className='events-container'>
+                    {events.map(event => 
+                        <Event 
+                        key={event.name} 
+                        name={event.name} 
+                        description={event.description}
+                        day={event.day}
+                        month={event.month}
+                        src={event.src}
+                        />
+                    )}
+                </div>
                 <div className='load-btn'>
-                    <button>Load More</button>
+                    <button type='button'>Load More</button>
                 </div>
             </div>
             <div className='sponsors-ctn'>
@@ -105,12 +152,24 @@ export default function Landing () {
                     <div className="logo-ctn">
                         <img src='./image 14.png' className="stripe-logo" alt=''/>
                     </div>
-                    <div className="logo-ctn"><img src='./image 15.png'  className="youtube-logo" alt=''/></div>
-                    <div className="logo-ctn"> <img src='./image 16.png'  className="microsoft-logo" alt=''/></div>
-                    <div className="logo-ctn"> <img src='./image 17.png' className="medium-logo" alt=''/></div>
-                    <div className="logo-ctn"><img src='./image 18.png' className="zoom-logo" alt=''/></div>
-                    <div className="logo-ctn"><img src='./image 19.png' className="uber-logo" alt=''/></div>
-                    <div className="logo-ctn">  <img src='./image 20.png' className="grab-logo" alt=''/></div>           
+                    <div className="logo-ctn">
+                        <img src='./image 15.png'  className="youtube-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn"> 
+                        <img src='./image 16.png'  className="microsoft-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn"> 
+                        <img src='./image 17.png' className="medium-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn">
+                        <img src='./image 18.png' className="zoom-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn">
+                        <img src='./image 19.png' className="uber-logo" alt=''/>
+                    </div>
+                    <div className="logo-ctn">  
+                        <img src='./image 20.png' className="grab-logo" alt=''/>
+                    </div>           
                 </div>
                
             </div>  

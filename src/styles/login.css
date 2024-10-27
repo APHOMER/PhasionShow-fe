@@ -27,6 +27,7 @@ a {
 
 .page-content, .banner-image{
     flex: 1;
+    width: 50%;
 }
 
 .page-content{
@@ -161,5 +162,6 @@ a {
 
     .page-content {
         max-width: 500px;
+        width: 100%;
     }
 }

@@ -111,7 +111,7 @@ const Login = ({ setAuthToken }) => {
                 </button>
                 <div className="bottom-text">
                   <p>Don't you have an account?</p>
-                  <Link to="/register">Sign up</Link>
+                  <Link to="/user/register">Sign up</Link>
                 </div>
               </div>
             </div>

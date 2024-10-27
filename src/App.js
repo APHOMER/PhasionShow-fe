@@ -16,8 +16,8 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/login" element={<Login setAuthToken={setAuthToken} />} />
-          <Route path="/register" element={<Register setAuthToken={setAuthToken} />} />
+          <Route path="/user/login" element={<Login setAuthToken={setAuthToken} />} />
+          <Route path="/user/register" element={<Register setAuthToken={setAuthToken} />} />
           <Route path="/shows/create" element={<CreateShow token={authToken} />} />
           <Route path="/shows" element={<ShowList token={authToken} />} />
           <Route path="/profile" element={<UserProfile token={authToken} />} />

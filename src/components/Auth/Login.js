@@ -80,7 +80,7 @@ const Login = ({ setAuthToken }) => {
                   />
                 </div>
                 <Link
-                  to="/"
+                  to="/user/forgotpassword"
                   className="forgot-password-link"
                 >Forgot Password</Link>
                 <button
@@ -111,7 +111,7 @@ const Login = ({ setAuthToken }) => {
                 </button>
                 <div className="bottom-text">
                   <p>Don't you have an account?</p>
-                  <Link to="/register">Sign up</Link>
+                  <Link to="/user/signup">Sign up</Link>
                 </div>
               </div>
             </div>

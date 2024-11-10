@@ -117,7 +117,6 @@ const Login = ({ setAuthToken }) => {
             </div>
           </main>
         </div>
-
         <img
           src="/assets/images/login-banner.jpg"
           alt=""
@@ -127,5 +126,4 @@ const Login = ({ setAuthToken }) => {
     </>
   );
 };
-
 export default Login;

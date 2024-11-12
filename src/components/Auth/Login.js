@@ -87,8 +87,7 @@ const Login = ({ setAuthToken }) => {
                   type="submit"
                   className="submit-btn"
                 >Sign in</button>
-              </form>
-
+              </form>              
               <div className="form-login-options">
                 <span className="or-text">Or</span>
                 <button className="external-login-btn">

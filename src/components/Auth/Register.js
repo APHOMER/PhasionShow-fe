@@ -106,7 +106,7 @@ const Register = ({ setAuthToken }) => {
                       name="dateOfBirth"
                       value={formInputs.dateOfBirth}
                       onChange={handleInputChange}
-                      required
+                      // required
                     />
                   </div>
                   <div className="input-wrapper">

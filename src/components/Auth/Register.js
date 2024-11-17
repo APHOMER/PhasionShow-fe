@@ -103,7 +103,7 @@ const Register = ({ setAuthToken }) => {
                     <input
                       id="date-of-birth"
                       type="date"
-                      name="dateOfBirth"
+                      // name="dateOfBirth"
                       value={formInputs.dateOfBirth}
                       onChange={handleInputChange}
                       // required

@@ -102,7 +102,7 @@ const Register = ({ setAuthToken }) => {
                     <label htmlFor="date-of-birth">Date of birth <span className="date-format">(MM/DD/YY)</span></label>
                     <input
                       id="date-of-birth"
-                      type="date"
+                      // type="date"
                       // name="dateOfBirth"
                       // value={formInputs.dateOfBirth}
                       // onChange={handleInputChange}

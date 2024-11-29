@@ -100,14 +100,14 @@ const Register = ({ setAuthToken }) => {
                   </div>
                   <div className="input-wrapper">
                     <label htmlFor="date-of-birth">Date of birth <span className="date-format">(MM/DD/YY)</span></label>
-                    <input
+                    {/* <input */}
                       // id="date-of-birth"
                       // type="date"
                       // name="dateOfBirth"
                       // value={formInputs.dateOfBirth}
                       // onChange={handleInputChange}
                       // required
-                    />
+                    {/* /> */}
                   </div>
                   <div className="input-wrapper">
                     <label htmlFor="password">Password</label>

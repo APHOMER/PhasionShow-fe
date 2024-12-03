@@ -31,7 +31,7 @@ const Login = ({ setAuthToken }) => {
       console.log({HEREEEE: retro})
       setAuthToken(retro.token);
       sessionStorage.setItem("token", retro.token)
-      navigate("/login")
+      navigate("/")
     } catch (err) {
       console.error(err);
     }

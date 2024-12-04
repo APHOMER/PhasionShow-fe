@@ -14,6 +14,7 @@ export default function Landing () {
                     <p>Schedule</p>
                     <p>Ticket</p>
                     <p>Contact</p>
+                    <p>Event</p>
                     <Link to="/login" className='login-btn'>Login</Link>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const Register = ({ setAuthToken }) => {
     "firstName": "",
     "lastName": "",
     "email": "",
-    // "dateOfBirth": "",
+    "dateOfBirth": "",
     "password": "",
     "confirmPassword": ""
   });

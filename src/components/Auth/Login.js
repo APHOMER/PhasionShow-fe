@@ -117,11 +117,11 @@ const Login = ({ setAuthToken }) => {
             </div>
           </main>
         </div>
-        {/* <img
+        <img
           src="/assets/images/login-banner.jpg"
           alt=""
           className="banner-image"
-        /> */}
+        />
       </div>
     </>
   );

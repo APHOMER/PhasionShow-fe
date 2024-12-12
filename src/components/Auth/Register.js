@@ -13,7 +13,7 @@ const Register = ({ setAuthToken }) => {
     "firstName": "",
     "lastName": "",
     "email": "",
-    // "dateOfBirth": "",
+    "dateOfBirth": "",
     "password": "",
     "confirmPassword": ""
   });
@@ -42,7 +42,7 @@ const Register = ({ setAuthToken }) => {
     try {
       const { data } = await register(body);
       setAuthToken(data.token);
-      navigate("/user/signup")
+      navigate("/signup")
     } catch (err) {
       console.error(err);
     }
